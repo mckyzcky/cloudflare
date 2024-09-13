@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="heading" (click)="navigate('mcky/zcky')">
+    <h1 id="title">mckyzcky</h1>
+    <p class="subhead">
+      {{ heading.split(":")[0] }}
+    </p>
+  </div>
+  <div
+    *ngFor="let item of curindices | keyvalue; let i = index"
+    [ngStyle]="{
+      'background-color': this.hover[i]
+        ? this.lColors[i % this.lColors.length]
+        : this.colors[i % this.colors.length],
+    }"
+    class="bars"
+    (mouseover)="onMouseOver(i)"
+    (mouseout)="onMouseOut(i)"
+    (click)="navigate(item.key)"
+  >
+    <h1 style="text-align: center; font-size: 50px">{{ i + 1 }}</h1>
+    <hr style="width: 90%" size="2" color="black" />
+    <p class="subtitles">
+      {{ item.key.split(":")[0] }}
+    </p>
+  </div>
+</div>
