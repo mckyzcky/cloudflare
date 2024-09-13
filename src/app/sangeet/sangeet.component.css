@@ -1,0 +1,12 @@
+* {
+  font-weight: 400;
+}
+
+.heading {
+  position: fixed;
+  top: -2%;
+  right: 1%;
+  text-align: center;
+  padding-top: 30px;
+  cursor: pointer;
+}
