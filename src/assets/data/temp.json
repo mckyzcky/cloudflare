@@ -1,0 +1,78 @@
+{
+  "10: Tum Se Hi": [
+    {
+      "chords": "G|6|D|5|C",
+      "lyrics": "Na hai yeh pana"
+    },
+    {
+      "chords": "C|5|D|6|G",
+      "lyrics": "Na Khona hi hai"
+    },
+    {
+      "chords": "G|7|D|4|C",
+      "lyrics": "Tera Na hona jane"
+    },
+    {
+      "chords": "C|7|D|5|G",
+      "lyrics": "Kyun hona hi hai"
+    },
+    {
+      "chords": "D|13|C",
+      "lyrics": "Tum se hi din hota hai"
+    },
+    {
+      "chords": "D|14|C",
+      "lyrics": "Surmaiye shaam aati hai"
+    },
+    {
+      "chords": "D|4|G|6|D|3|G",
+      "lyrics": "Tumse hi tumse hi"
+    },
+    {
+      "chords": "D|15|C",
+      "lyrics": "Har ghari saans aati hai"
+    },
+    {
+      "chords": "D|10|C",
+      "lyrics": "Zindagi kehlati hai"
+    },
+    {
+      "chords": "D|5|G|5|D|2|G",
+      "lyrics": "Tumse hi tumse hi"
+    }
+  ],
+  "11: Tere Bina": [
+    {
+      "chords": "G",
+      "lyrics": "Dum dara dum dara mast mast dara"
+    },
+    {
+      "chords": "D",
+      "lyrics": "Dum dara dum dara mast mast dara"
+    },
+    {
+      "chords": "C",
+      "lyrics": "Dum dara dum dum, Oh hum dum"
+    },
+    {
+      "chords": "G",
+      "lyrics": "Bin tere kya jeena"
+    },
+    {
+      "chords": "G",
+      "lyrics": "Dum dara dum dara mast mast dara"
+    },
+    {
+      "chords": "D",
+      "lyrics": "Dum dara dum dara mast mast dara"
+    },
+    {
+      "chords": "C",
+      "lyrics": "Dum dara dum dum, Humesha"
+    },
+    {
+      "chords": "G",
+      "lyrics": "Ishq mein hai jeena"
+    }
+  ]
+}
