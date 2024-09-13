@@ -1,0 +1,51 @@
+<mat-card class="system-info-card">
+  <mat-card-header>
+    <mat-card-title>System Info</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div *ngIf="systemInfo; else loading">
+      <mat-grid-list cols="1" rowHeight="100px">
+        <mat-grid-tile>
+          <div class="info-row">
+            <span>Hostname:</span>
+            <span>{{ systemInfo.hostname }}</span>
+          </div>
+          <div class="info-row">
+            <span>Architecture:</span>
+            <span>{{ systemInfo.arch }}</span>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+
+      <div class="chart-section">
+        <h3>CPU Temperature</h3>
+        <!-- <ngx-charts-sparkline
+          [results]="temp"
+          [color]="temp[temp.length - 1] > 50 ? 'red' : '#5D3FD3'"
+          [settings]="tempSettings"
+        ></ngx-charts-sparkline> -->
+
+        <h3>CPU Usage</h3>
+        <mat-grid-list cols="2" rowHeight="100px">
+          <mat-grid-tile *ngFor="let core of [core1, core2, core3, core4]">
+            <!-- <ngx-charts-sparkline
+              [results]="core"
+              [color]="core[core.length - 1] > 90 ? 'red' : '#5D3FD3'"
+              [settings]="usageSettings"
+            ></ngx-charts-sparkline> -->
+          </mat-grid-tile>
+        </mat-grid-list>
+
+        <h3>Memory Usage</h3>
+        <mat-progress-bar
+          mode="determinate"
+          [value]="mem"
+          color="primary"
+        ></mat-progress-bar>
+      </div>
+    </div>
+    <ng-template #loading>
+      <p>Loading...</p>
+    </ng-template>
+  </mat-card-content>
+</mat-card>
