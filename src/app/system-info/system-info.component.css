@@ -1,0 +1,21 @@
+.system-info-card {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  color: #fafafa;
+  margin: 20px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.chart-section {
+  margin-top: 20px;
+}
+
+mat-progress-bar {
+  margin-top: 20px;
+}
