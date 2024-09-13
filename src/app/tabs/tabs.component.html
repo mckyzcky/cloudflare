@@ -1,0 +1,103 @@
+<div class="heading" (click)="navigate()">
+  <h1 id="title">mckyzcky.com</h1>
+</div>
+
+<div class="container" style="overflow-y: auto; min-height: 1000px" #container>
+  <div *ngFor="let item of songs | keyvalue" class="songs">
+    <h1 class="heads">
+      {{ item.key.split(": ")[1] }}
+    </h1>
+    <div style="display: flex; flex-direction: column" class="song">
+      <div *ngFor="let value of item.value">
+        <div *ngFor="let v of value | keyvalue">
+          <div
+            *ngIf="v.key === 'chords'"
+            style="display: flex; flex-direction: row"
+          >
+            <div *ngFor="let c of v.value.split('|')">
+              <div
+                *ngIf="isNumber(c)"
+                style="display: flex; flex-direction: row"
+              >
+                <div *ngFor="let s of toNumber(c)">
+                  <p style="line-height: 10px; font-size: 15px; opacity: 0">
+                    {{ "_" }}
+                  </p>
+                </div>
+              </div>
+              <div *ngIf="!isNumber(c)">
+                <p class="chord">
+                  {{ c }}
+                </p>
+              </div>
+            </div>
+          </div>
+          <p *ngIf="v.key === 'lyrics'" class="lyrics">
+            {{ v.value }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tabbar">
+  <button
+    class="button"
+    mat-mini-fab
+    aria-label="Scroll minus"
+    (click)="scrollMinus()"
+    style="
+      margin-top: 20px;
+      font-size: 30px;
+      padding-bottom: 22px;
+      font-weight: 600;
+    "
+  >
+    _
+  </button>
+  <div style="display: flex; flex-direction: column">
+    <p style="font-size: 12px; text-align: center">Scroll</p>
+    <p style="font-size: 30px; text-align: center; width: 70px">
+      {{ scrollAmount }}
+    </p>
+  </div>
+  <button
+    class="button"
+    mat-mini-fab
+    aria-label="Scroll plus"
+    (click)="scrollPlus()"
+    style="margin-top: 20px; font-size: 40px"
+  >
+    +
+  </button>
+  <button
+    class="button"
+    mat-mini-fab
+    aria-label="Transpose minus"
+    (click)="transposeMinus()"
+    style="
+      margin-top: 20px;
+      font-size: 30px;
+      padding-bottom: 22px;
+      font-weight: 600;
+    "
+  >
+    _
+  </button>
+  <div style="display: flex; flex-direction: column">
+    <p style="font-size: 12px; text-align: center">Transpose</p>
+    <p style="font-size: 30px; text-align: center; width: 70px">
+      {{ transposeAmount }}
+    </p>
+  </div>
+  <button
+    class="button"
+    mat-mini-fab
+    aria-label="Transpose plus"
+    (click)="transposePlus()"
+    style="margin-top: 20px; font-size: 40px"
+  >
+    +
+  </button>
+</div>
