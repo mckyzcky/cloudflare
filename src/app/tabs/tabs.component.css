@@ -1,0 +1,150 @@
+* {
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 415px) {
+  .heading {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    padding-top: 30px;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 415px) {
+  .heading {
+    position: fixed;
+    top: -2%;
+    right: 1%;
+    text-align: center;
+    padding-top: 30px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  #title {
+    font-size: 40px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+}
+@media only screen and (min-width: 415px) {
+  #title {
+    font-size: 30px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 415px) {
+  .container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .songs {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-width: 415px) {
+  .songs {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .heads {
+    font-size: 30px;
+    width: 100vw;
+    text-align: center;
+    line-height: 50px;
+  }
+}
+@media only screen and (min-width: 415px) {
+  .heads {
+    font-size: 50px;
+    padding-left: 150px;
+    width: 450px;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .song {
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 415px) {
+  .song {
+    align-items: flex-start;
+  }
+}
+
+.chord {
+  line-height: 10px;
+  font-size: 15px;
+  font-weight: 500 !important;
+}
+
+.lyrics {
+  line-height: 20px;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 415px) {
+  .tabbar {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 70px;
+    background-color: rgba(50, 50, 50, 0.9);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 415px) {
+  .tabbar {
+    position: fixed;
+    left: 140px;
+    bottom: 0;
+    width: 400px;
+    height: 70px;
+    background-color: rgba(50, 50, 50, 0.9);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.button {
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: white;
+}
